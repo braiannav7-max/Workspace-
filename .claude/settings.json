@@ -24,10 +24,14 @@
       "Bash(git commit -m ' *)",
       "Bash(git commit -q -m 'docs: INTAKE-PROYECTO \\(protocolo de arranque case-by-case\\) + fix numeración *)",
       "Bash(open docs/INTAKE-PROYECTO.md)",
-      "Bash(git commit -q -m 'docs: diseño Agentes Personales \\(subsistema A\\) — copywriter, asesor, analista *)"
+      "Bash(git commit -q -m 'docs: diseño Agentes Personales \\(subsistema A\\) — copywriter, asesor, analista *)",
+      "Bash(git commit -q -m 'docs: plan de implementación Agentes Personales \\(5 tareas\\) *)",
+      "Bash(mkdir -p /Users/braiannavarrete/Desktop/Framework/.claude/agents && mkdir -p /Users/braiannavarrete/Desktop/Framework/ai/prompts)",
+      "Bash(git commit -q -m 'feat\\(agentes\\): copywriter, asesor-comercial y analista-leads + voz e instalación *)"
     ],
     "additionalDirectories": [
-      "/Users/braiannavarrete/Desktop/Framework/templates/landing-react"
+      "/Users/braiannavarrete/Desktop/Framework/templates/landing-react",
+      "/Users/braiannavarrete/Desktop/Framework/.claude"
     ]
   }
 }
