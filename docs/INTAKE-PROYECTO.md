@@ -81,7 +81,7 @@ Un proyecto puede combinar varios (ej: landing + automatización de leads).
 
 ---
 
-## 3. Cierre del intake
+## 6. Cierre del intake
 
 - [ ] Tipo(s) de proyecto definido(s).
 - [ ] Stack elegido (anotar las herramientas reales que vas a usar).

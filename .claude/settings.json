@@ -20,7 +20,9 @@
       "Bash(touch templates/landing-react/.probe)",
       "Bash(rm templates/landing-react/.probe)",
       "Bash(rmdir templates/landing-react 2>/dev/null; npx --yes create-next-app@latest templates/landing-react --ts --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack --use-npm --skip-install 2>&1 | tail -12)",
-      "Bash(git commit -q -m 'feat\\(fase2\\): starter Next.js 15 + TS + Tailwind v4 con navbar y hero en React *)"
+      "Bash(git commit -q -m 'feat\\(fase2\\): starter Next.js 15 + TS + Tailwind v4 con navbar y hero en React *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git commit -q -m 'docs: INTAKE-PROYECTO \\(protocolo de arranque case-by-case\\) + fix numeración *)"
     ],
     "additionalDirectories": [
       "/Users/braiannavarrete/Desktop/Framework/templates/landing-react"
