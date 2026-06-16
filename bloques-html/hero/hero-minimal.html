@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero — Minimal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','ui-sans-serif','system-ui','sans-serif']}}}}</script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+  <!-- ===== BLOQUE: hero · variante 3 (minimal) ===== -->
+  <!-- Fuente: HyperUI · Licencia: MIT -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-28 sm:py-36 text-center">
+      <span data-aos="fade-up" data-aos-delay="0" class="inline-flex items-center rounded-full bg-indigo-50 px-3 py-1 text-sm font-medium text-indigo-600 ring-1 ring-inset ring-indigo-200">
+        Novedad 2026
+      </span>
+      <h1 data-aos="fade-up" data-aos-delay="100" class="mx-auto mt-8 max-w-3xl text-5xl sm:text-6xl font-extrabold tracking-tight text-slate-900">
+        Menos ruido. Más resultados.
+      </h1>
+      <p data-aos="fade-up" data-aos-delay="200" class="mx-auto mt-6 max-w-xl text-lg text-slate-600">
+        La herramienta que se sale del camino para que vos hagas lo que mejor sabés hacer.
+      </p>
+      <div data-aos="fade-up" data-aos-delay="200" class="mt-10">
+        <a href="#" class="inline-flex items-center justify-center rounded-lg bg-indigo-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-indigo-700">
+          Probar gratis
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ===== FIN BLOQUE ===== -->
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 600, once: true });</script>
+</body>
+</html>

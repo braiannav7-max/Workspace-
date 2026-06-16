@@ -9,7 +9,9 @@
       "Bash(git commit -q -m 'feat: scaffolding + catálogo _index.html + bloque navbar \\(3 variantes\\) *)",
       "Bash(open bloques-html/_index.html bloques-html/navbar/navbar-sticky.html bloques-html/navbar/navbar-transparente.html bloques-html/navbar/navbar-mobile.html)",
       "Bash(git commit -q -m 'style: tipografía Inter como estándar + header premium del catálogo *)",
-      "Bash(open bloques-html/_index.html bloques-html/navbar/navbar-sticky.html)"
+      "Bash(open bloques-html/_index.html bloques-html/navbar/navbar-sticky.html)",
+      "Bash(node -e ' *)",
+      "Bash(git commit -q -m 'feat: catálogo completo \\(8 bloques listos\\) + docs de uso + landing de ejemplo *)"
     ]
   }
 }

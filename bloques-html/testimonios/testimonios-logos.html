@@ -1,0 +1,79 @@
+<!-- ===== BLOQUE: testimonios · variante logos ===== -->
+<!-- Fuente: HyperUI · Licencia: MIT -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonios — Logos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','ui-sans-serif','system-ui','sans-serif']}}}}</script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+  <section class="mx-auto max-w-7xl px-6 py-20">
+    <div class="mx-auto max-w-2xl text-center" data-aos="fade-up">
+      <h2 class="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
+        Empresas que confían en nosotros
+      </h2>
+      <p class="mt-3 text-slate-600">
+        Más de 2.000 equipos en todo el mundo eligen nuestra plataforma cada día.
+      </p>
+    </div>
+
+    <!-- Banda de logos -->
+    <div class="mt-14 grid grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
+
+      <div class="flex justify-center text-slate-500 opacity-60 transition hover:opacity-100" data-aos="fade-up" data-aos-delay="0">
+        <span class="text-2xl font-extrabold tracking-tight">ACME</span>
+      </div>
+
+      <div class="flex justify-center text-slate-500 opacity-60 transition hover:opacity-100" data-aos="fade-up" data-aos-delay="50">
+        <span class="text-2xl font-extrabold italic tracking-tight">Globex</span>
+      </div>
+
+      <div class="flex items-center justify-center gap-2 text-slate-500 opacity-60 transition hover:opacity-100" data-aos="fade-up" data-aos-delay="100">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+        <span class="text-2xl font-bold tracking-tight">Soylent</span>
+      </div>
+
+      <div class="flex justify-center text-slate-500 opacity-60 transition hover:opacity-100" data-aos="fade-up" data-aos-delay="150">
+        <span class="text-2xl font-extrabold uppercase tracking-widest">Initech</span>
+      </div>
+
+      <div class="flex items-center justify-center gap-2 text-slate-500 opacity-60 transition hover:opacity-100" data-aos="fade-up" data-aos-delay="200">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+        <span class="text-2xl font-bold tracking-tight">Umbrella</span>
+      </div>
+
+      <div class="flex justify-center text-slate-500 opacity-60 transition hover:opacity-100" data-aos="fade-up" data-aos-delay="250">
+        <span class="text-2xl font-black tracking-tight">Hooli</span>
+      </div>
+
+    </div>
+
+    <!-- Métrica destacada -->
+    <div class="mt-16 grid gap-8 border-t border-slate-200 pt-12 sm:grid-cols-3" data-aos="fade-up">
+      <div class="text-center">
+        <div class="text-4xl font-extrabold text-indigo-600">2.000+</div>
+        <p class="mt-2 text-sm text-slate-600">Equipos activos</p>
+      </div>
+      <div class="text-center">
+        <div class="text-4xl font-extrabold text-indigo-600">98%</div>
+        <p class="mt-2 text-sm text-slate-600">Satisfacción de clientes</p>
+      </div>
+      <div class="text-center">
+        <div class="text-4xl font-extrabold text-indigo-600">4.9/5</div>
+        <p class="mt-2 text-sm text-slate-600">Valoración promedio</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 600, once: true });</script>
+</body>
+</html>

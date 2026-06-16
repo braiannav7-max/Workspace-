@@ -1,0 +1,117 @@
+<!-- ===== BLOQUE: features · variante grid ===== -->
+<!-- Fuente: HyperUI · Licencia: MIT -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features — Grid</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','ui-sans-serif','system-ui','sans-serif']}}}}</script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+  <section class="mx-auto max-w-7xl px-6 py-20">
+    <!-- Encabezado -->
+    <div class="mx-auto max-w-2xl text-center" data-aos="fade-up">
+      <p class="text-sm font-semibold uppercase tracking-wide text-indigo-600">Funcionalidades</p>
+      <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+        Todo lo que necesitás, en un solo lugar
+      </h2>
+      <p class="mt-4 text-lg text-slate-600">
+        Herramientas diseñadas para que tu equipo trabaje más rápido y con menos fricción.
+      </p>
+    </div>
+
+    <!-- Grid de features -->
+    <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Feature 1 -->
+      <article class="rounded-2xl border border-slate-200 p-6 transition hover:shadow-md" data-aos="fade-up" data-aos-delay="0">
+        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+          </svg>
+        </div>
+        <h3 class="mt-5 text-lg font-semibold text-slate-900">Velocidad real</h3>
+        <p class="mt-2 text-sm leading-relaxed text-slate-600">
+          Tiempos de carga mínimos y respuestas instantáneas para una experiencia fluida.
+        </p>
+      </article>
+
+      <!-- Feature 2 -->
+      <article class="rounded-2xl border border-slate-200 p-6 transition hover:shadow-md" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="mt-5 text-lg font-semibold text-slate-900">Confiabilidad</h3>
+        <p class="mt-2 text-sm leading-relaxed text-slate-600">
+          Infraestructura estable con un uptime del 99,9% para que nunca te detengas.
+        </p>
+      </article>
+
+      <!-- Feature 3 -->
+      <article class="rounded-2xl border border-slate-200 p-6 transition hover:shadow-md" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 0h10.5a2.25 2.25 0 012.25 2.25v6.75a2.25 2.25 0 01-2.25 2.25H6.75a2.25 2.25 0 01-2.25-2.25v-6.75a2.25 2.25 0 012.25-2.25z" />
+          </svg>
+        </div>
+        <h3 class="mt-5 text-lg font-semibold text-slate-900">Seguridad</h3>
+        <p class="mt-2 text-sm leading-relaxed text-slate-600">
+          Cifrado de extremo a extremo y controles de acceso granulares por defecto.
+        </p>
+      </article>
+
+      <!-- Feature 4 -->
+      <article class="rounded-2xl border border-slate-200 p-6 transition hover:shadow-md" data-aos="fade-up" data-aos-delay="0">
+        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+          </svg>
+        </div>
+        <h3 class="mt-5 text-lg font-semibold text-slate-900">En la nube</h3>
+        <p class="mt-2 text-sm leading-relaxed text-slate-600">
+          Accedé a tu trabajo desde cualquier dispositivo, sincronizado en tiempo real.
+        </p>
+      </article>
+
+      <!-- Feature 5 -->
+      <article class="rounded-2xl border border-slate-200 p-6 transition hover:shadow-md" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+          </svg>
+        </div>
+        <h3 class="mt-5 text-lg font-semibold text-slate-900">Personalizable</h3>
+        <p class="mt-2 text-sm leading-relaxed text-slate-600">
+          Ajustá flujos, vistas y permisos para que se adapten a tu manera de trabajar.
+        </p>
+      </article>
+
+      <!-- Feature 6 -->
+      <article class="rounded-2xl border border-slate-200 p-6 transition hover:shadow-md" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+          </svg>
+        </div>
+        <h3 class="mt-5 text-lg font-semibold text-slate-900">Soporte 24/7</h3>
+        <p class="mt-2 text-sm leading-relaxed text-slate-600">
+          Un equipo humano disponible siempre que lo necesites, sin esperas eternas.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 600, once: true });</script>
+</body>
+</html>

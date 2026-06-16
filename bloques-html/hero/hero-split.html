@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero — Split</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','ui-sans-serif','system-ui','sans-serif']}}}}</script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+  <!-- ===== BLOQUE: hero · variante 2 (split) ===== -->
+  <!-- Fuente: HyperUI · Licencia: MIT -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-20 lg:py-28">
+      <div class="grid items-center gap-12 lg:grid-cols-2">
+        <div class="text-center lg:text-left">
+          <h1 data-aos="fade-up" data-aos-delay="0" class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900">
+            Todo lo que necesitás para crecer, en un solo lugar
+          </h1>
+          <p data-aos="fade-up" data-aos-delay="100" class="mt-6 max-w-xl text-lg text-slate-600 mx-auto lg:mx-0">
+            Automatizá tareas, organizá tu equipo y entregá resultados más rápido. Sin complicaciones, sin curva de aprendizaje eterna.
+          </p>
+          <div data-aos="fade-up" data-aos-delay="200" class="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="#" class="inline-flex items-center justify-center rounded-lg bg-indigo-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-indigo-700">
+              Empezar ahora
+            </a>
+            <a href="#" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-700 shadow-sm transition hover:bg-slate-50">
+              Hablar con ventas
+            </a>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100" class="flex justify-center lg:justify-end">
+          <img src="https://placehold.co/600x500/e0e7ff/4f46e5?text=Imagen" alt="Vista previa del producto" class="w-full max-w-xl rounded-2xl shadow-xl">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== FIN BLOQUE ===== -->
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 600, once: true });</script>
+</body>
+</html>

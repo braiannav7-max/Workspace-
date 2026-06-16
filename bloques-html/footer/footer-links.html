@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer — Links</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','ui-sans-serif','system-ui','sans-serif']}}}}</script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+  <!-- Contenido de relleno para empujar el footer hacia abajo -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-24 text-center">
+      <h1 class="text-3xl font-bold text-slate-900 sm:text-4xl">Contenido de la página</h1>
+      <p class="mt-4 text-slate-600">Desplazá hacia abajo para ver el footer.</p>
+    </div>
+  </section>
+
+  <!-- ===== BLOQUE: footer · variante links ===== -->
+  <!-- Fuente: HyperUI · Licencia: MIT -->
+  <footer class="bg-slate-900 text-slate-300">
+    <div class="mx-auto max-w-7xl px-6 py-12">
+
+      <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6" data-aos="fade-up">
+
+        <!-- Columna logo + descripción -->
+        <div class="col-span-2">
+          <a href="#" class="flex items-center gap-2">
+            <span class="grid h-9 w-9 place-content-center rounded-lg bg-indigo-600 text-white font-bold">M</span>
+            <span class="text-lg font-bold text-white">Marca</span>
+          </a>
+          <p class="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
+            Construimos herramientas simples para que tu equipo trabaje mejor. Diseño, velocidad y soporte real.
+          </p>
+        </div>
+
+        <!-- Producto -->
+        <div>
+          <p class="font-semibold text-white">Producto</p>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Características</a></li>
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Precios</a></li>
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Integraciones</a></li>
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Novedades</a></li>
+          </ul>
+        </div>
+
+        <!-- Empresa -->
+        <div>
+          <p class="font-semibold text-white">Empresa</p>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Nosotros</a></li>
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Equipo</a></li>
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Empleos</a></li>
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Recursos -->
+        <div>
+          <p class="font-semibold text-white">Recursos</p>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Blog</a></li>
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Documentación</a></li>
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Soporte</a></li>
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Guías</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div>
+          <p class="font-semibold text-white">Legal</p>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Privacidad</a></li>
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Términos</a></li>
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Cookies</a></li>
+            <li><a href="#" class="text-slate-400 transition hover:text-white">Licencias</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Barra inferior: copyright + sociales -->
+      <div class="mt-12 flex flex-col items-center gap-4 border-t border-slate-800 pt-6 sm:flex-row sm:justify-between">
+        <p class="text-sm text-slate-500">© 2026 Marca. Todos los derechos reservados.</p>
+
+        <ul class="flex items-center gap-5">
+          <li>
+            <a href="#" aria-label="Twitter" class="text-slate-400 transition hover:text-white">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M13.6 10.5 21 2h-2l-6.3 7.3L7.7 2H2l7.8 11.3L2 22h2l6.7-7.8 5.4 7.8H22l-8.4-11.5Zm-2.4 2.7-.8-1.1L5 3.5h2.7l5 7.1.8 1.1 6.5 9.2h-2.7l-5.1-7.7Z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Instagram" class="text-slate-400 transition hover:text-white">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2c2.7 0 3 0 4.1.06 1.1.05 1.8.23 2.4.48.66.25 1.2.6 1.77 1.16.56.56.9 1.1 1.16 1.77.25.6.43 1.3.48 2.4C21.99 9 22 9.3 22 12s0 3-.06 4.1c-.05 1.1-.23 1.8-.48 2.4a4.9 4.9 0 0 1-1.16 1.77c-.56.56-1.1.9-1.77 1.16-.6.25-1.3.43-2.4.48C15 21.99 14.7 22 12 22s-3 0-4.1-.06c-1.1-.05-1.8-.23-2.4-.48a4.9 4.9 0 0 1-1.77-1.16 4.9 4.9 0 0 1-1.16-1.77c-.25-.6-.43-1.3-.48-2.4C2.01 15 2 14.7 2 12s0-3 .06-4.1c.05-1.1.23-1.8.48-2.4.25-.66.6-1.2 1.16-1.77.56-.56 1.1-.9 1.77-1.16.6-.25 1.3-.43 2.4-.48C9 2.01 9.3 2 12 2Zm0 1.8c-2.67 0-2.98.01-4.03.06-.97.05-1.5.2-1.85.34-.47.18-.8.4-1.15.75-.35.35-.57.68-.75 1.15-.14.35-.3.88-.34 1.85C3.83 9 3.8 9.32 3.8 12s.01 2.98.06 4.03c.05.97.2 1.5.34 1.85.18.47.4.8.75 1.15.35.35.68.57 1.15.75.35.14.88.3 1.85.34 1.05.05 1.36.06 4.03.06s2.98-.01 4.03-.06c.97-.05 1.5-.2 1.85-.34.47-.18.8-.4 1.15-.75.35-.35.57-.68.75-1.15.14-.35.3-.88.34-1.85.05-1.05.06-1.36.06-4.03s-.01-2.98-.06-4.03c-.05-.97-.2-1.5-.34-1.85a3.1 3.1 0 0 0-.75-1.15 3.1 3.1 0 0 0-1.15-.75c-.35-.14-.88-.3-1.85-.34C14.98 3.81 14.67 3.8 12 3.8Zm0 3.07a5.13 5.13 0 1 1 0 10.26 5.13 5.13 0 0 1 0-10.26Zm0 1.8a3.33 3.33 0 1 0 0 6.66 3.33 3.33 0 0 0 0-6.66Zm5.34-.96a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="LinkedIn" class="text-slate-400 transition hover:text-white">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6 0h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9V9Z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+  <!-- ===== /BLOQUE footer · links ===== -->
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 600, once: true });</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!-- ===== BLOQUE: formularios · variante lead ===== -->
+<!-- Fuente: HyperUI · Licencia: MIT -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario — Lead</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','ui-sans-serif','system-ui','sans-serif']}}}}</script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+  <section class="mx-auto max-w-7xl px-6 py-20">
+    <div class="flex justify-center">
+      <div class="w-full max-w-md" data-aos="fade-up">
+        <form id="form-lead" class="rounded-2xl border border-slate-200 p-8 shadow-sm" novalidate>
+          <div class="text-center">
+            <h2 class="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
+              Sumate a la lista de espera
+            </h2>
+            <p class="mt-2 text-slate-600">
+              Dejanos tus datos y recibí acceso anticipado más un descuento exclusivo de lanzamiento.
+            </p>
+          </div>
+
+          <div class="mt-8 grid grid-cols-1 gap-4">
+            <div>
+              <label for="nombre" class="mb-1.5 block text-sm font-medium text-slate-700">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required autocomplete="name"
+                placeholder="Tu nombre"
+                class="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none">
+            </div>
+
+            <div>
+              <label for="email" class="mb-1.5 block text-sm font-medium text-slate-700">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email"
+                placeholder="tu@email.com"
+                class="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none">
+            </div>
+
+            <button type="submit"
+              class="mt-2 inline-flex w-full items-center justify-center rounded-lg bg-indigo-600 px-5 py-3.5 text-base font-semibold text-white transition hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+              Quiero acceso anticipado
+            </button>
+
+            <p class="text-center text-xs text-slate-500">
+              Sin spam. Te podés dar de baja cuando quieras.
+            </p>
+          </div>
+
+          <!-- Mensaje de éxito (oculto por defecto) -->
+          <div id="form-exito" class="mt-5 hidden rounded-lg border border-green-200 bg-green-50 px-4 py-3 text-center text-sm text-green-800">
+            ¡Listo! Te anotamos. Revisá tu email para confirmar.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 600, once: true });</script>
+  <script>
+    // Demo: previene el envío real y muestra mensaje de éxito.
+    // En producción, conectar a un backend/endpoint.
+    (function () {
+      const form = document.getElementById('form-lead');
+      const exito = document.getElementById('form-exito');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        form.reset();
+        exito.classList.remove('hidden');
+        exito.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    })();
+  </script>
+</body>
+</html>
