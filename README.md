@@ -32,6 +32,7 @@ docs/             ← Cómo usar, convenciones, checklist de nuevo proyecto
 
 ## Documentación
 
+- [docs/INTAKE-PROYECTO.md](docs/INTAKE-PROYECTO.md) — **empezá acá:** qué tipo de proyecto es y qué open source usar
 - [docs/COMO-USAR.md](docs/COMO-USAR.md) — cómo agarrar un bloque y meterlo en un proyecto
 - [docs/CONVENCIONES.md](docs/CONVENCIONES.md) — naming, estados, anatomía de un bloque
 - [docs/NUEVO-PROYECTO.md](docs/NUEVO-PROYECTO.md) — checklist al arrancar una web

@@ -2,6 +2,9 @@
 
 Pasos para arrancar una landing nueva usando el workspace.
 
+> Antes de esto, pasá por [INTAKE-PROYECTO.md](INTAKE-PROYECTO.md) para confirmar que
+> el proyecto es efectivamente una web/landing y elegir el stack.
+
 ## Antes de empezar
 
 - [ ] ¿Qué tipo de web es? (landing de servicio, producto, evento, funnel)

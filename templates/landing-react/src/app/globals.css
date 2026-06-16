@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* Diseño claro y predecible (Inter se aplica desde layout.tsx).
+   Si querés dark mode, se agrega con la estrategia 'class' de Tailwind. */

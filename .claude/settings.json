@@ -14,7 +14,16 @@
       "Bash(git commit -q -m 'feat: catálogo completo \\(8 bloques listos\\) + docs de uso + landing de ejemplo *)",
       "Bash(open _ejemplo-landing.html bloques-html/_index.html)",
       "Bash(git commit -q -m 'feat\\(hero\\): 3 variantes premium animadas \\(aurora, typing, flotante\\) *)",
-      "Bash(open bloques-html/hero/hero-aurora.html bloques-html/hero/hero-typing.html bloques-html/hero/hero-flotante.html)"
+      "Bash(open bloques-html/hero/hero-aurora.html bloques-html/hero/hero-typing.html bloques-html/hero/hero-flotante.html)",
+      "Bash(npx --yes create-next-app@latest templates/landing-react --ts --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack --use-npm --skip-install)",
+      "Bash(mkdir -p templates/landing-react)",
+      "Bash(touch templates/landing-react/.probe)",
+      "Bash(rm templates/landing-react/.probe)",
+      "Bash(rmdir templates/landing-react 2>/dev/null; npx --yes create-next-app@latest templates/landing-react --ts --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack --use-npm --skip-install 2>&1 | tail -12)",
+      "Bash(git commit -q -m 'feat\\(fase2\\): starter Next.js 15 + TS + Tailwind v4 con navbar y hero en React *)"
+    ],
+    "additionalDirectories": [
+      "/Users/braiannavarrete/Desktop/Framework/templates/landing-react"
     ]
   }
 }
