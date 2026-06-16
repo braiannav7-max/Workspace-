@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git symbolic-ref *)",
+      "Bash(git -c user.name=braiannav7-max -c user.email=glgeribabuziosriodejaneiro@gmail.com commit -q -m 'docs: diseño Dev Framework V2 — Fase 1 \\(fábrica de bloques HTML\\) *)"
+    ]
+  }
+}
