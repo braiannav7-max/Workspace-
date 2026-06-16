@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar — Sticky</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+  <!-- ===== BLOQUE: navbar · variante sticky ===== -->
+  <!-- Fuente: HyperUI (patrón header) · Licencia: MIT -->
+  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2 text-lg font-bold tracking-tight">
+        <span class="grid h-8 w-8 place-content-center rounded-lg bg-indigo-600 text-white">M</span>
+        Marca
+      </a>
+      <!-- Links (desktop) -->
+      <ul class="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
+        <li><a href="#" class="transition hover:text-slate-900">Inicio</a></li>
+        <li><a href="#" class="transition hover:text-slate-900">Servicios</a></li>
+        <li><a href="#" class="transition hover:text-slate-900">Precios</a></li>
+        <li><a href="#" class="transition hover:text-slate-900">Contacto</a></li>
+      </ul>
+      <!-- CTA -->
+      <div class="flex items-center gap-3">
+        <a href="#" class="hidden text-sm font-medium text-slate-600 transition hover:text-slate-900 sm:block">Ingresar</a>
+        <a href="#" class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700">Empezar</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido de relleno para probar el sticky -->
+  <section class="mx-auto max-w-3xl px-6 py-16">
+    <h1 class="text-3xl font-bold">Scrolleá para ver el navbar fijo</h1>
+    <p class="mt-4 text-slate-600">El header queda pegado arriba con efecto blur al hacer scroll.</p>
+    <div class="mt-8 space-y-4 text-slate-500">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+      <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+      <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur.</p>
+      <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse.</p>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+      <p>Et harum quidem rerum facilis est et expedita distinctio nam libero tempore.</p>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar — Mobile (hamburguesa)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+  <!-- ===== BLOQUE: navbar · variante mobile ===== -->
+  <!-- Fuente: HyperUI (patrón header con menú mobile) · Licencia: MIT -->
+  <header class="border-b border-slate-200 bg-white">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="#" class="flex items-center gap-2 text-lg font-bold">
+        <span class="grid h-8 w-8 place-content-center rounded-lg bg-indigo-600 text-white">M</span>
+        Marca
+      </a>
+
+      <!-- Links desktop -->
+      <ul class="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
+        <li><a href="#" class="transition hover:text-slate-900">Inicio</a></li>
+        <li><a href="#" class="transition hover:text-slate-900">Servicios</a></li>
+        <li><a href="#" class="transition hover:text-slate-900">Precios</a></li>
+        <li><a href="#" class="transition hover:text-slate-900">Contacto</a></li>
+      </ul>
+      <a href="#" class="hidden rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700 md:block">Empezar</a>
+
+      <!-- Botón hamburguesa (mobile) -->
+      <button id="menuBtn" aria-label="Abrir menú" class="md:hidden">
+        <svg id="iconOpen" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" class="hidden h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </nav>
+
+    <!-- Menú mobile desplegable -->
+    <div id="mobileMenu" class="hidden border-t border-slate-200 bg-white md:hidden">
+      <ul class="space-y-1 px-6 py-4 text-sm font-medium text-slate-700">
+        <li><a href="#" class="block rounded-lg px-3 py-2 transition hover:bg-slate-100">Inicio</a></li>
+        <li><a href="#" class="block rounded-lg px-3 py-2 transition hover:bg-slate-100">Servicios</a></li>
+        <li><a href="#" class="block rounded-lg px-3 py-2 transition hover:bg-slate-100">Precios</a></li>
+        <li><a href="#" class="block rounded-lg px-3 py-2 transition hover:bg-slate-100">Contacto</a></li>
+        <li class="pt-2"><a href="#" class="block rounded-lg bg-indigo-600 px-3 py-2 text-center font-semibold text-white">Empezar</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="mx-auto max-w-3xl px-6 py-16">
+    <h1 class="text-3xl font-bold">Achicá la ventana para ver el menú mobile</h1>
+    <p class="mt-4 text-slate-600">Por debajo de 768px aparece el botón hamburguesa. Tocalo para abrir/cerrar.</p>
+  </section>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    const iconOpen = document.getElementById('iconOpen');
+    const iconClose = document.getElementById('iconClose');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(git symbolic-ref *)",
-      "Bash(git -c user.name=braiannav7-max -c user.email=glgeribabuziosriodejaneiro@gmail.com commit -q -m 'docs: diseño Dev Framework V2 — Fase 1 \\(fábrica de bloques HTML\\) *)"
+      "Bash(git -c user.name=braiannav7-max -c user.email=glgeribabuziosriodejaneiro@gmail.com commit -q -m 'docs: diseño Dev Framework V2 — Fase 1 \\(fábrica de bloques HTML\\) *)",
+      "Bash(git fetch *)",
+      "Bash(git merge *)",
+      "Bash(git commit -q -m 'docs: plan de implementación Fase 1 — 10 tareas, bloque por bloque *)",
+      "Bash(git commit -q -m 'feat: scaffolding + catálogo _index.html + bloque navbar \\(3 variantes\\) *)"
     ]
   }
 }
