@@ -6,7 +6,10 @@
       "Bash(git fetch *)",
       "Bash(git merge *)",
       "Bash(git commit -q -m 'docs: plan de implementación Fase 1 — 10 tareas, bloque por bloque *)",
-      "Bash(git commit -q -m 'feat: scaffolding + catálogo _index.html + bloque navbar \\(3 variantes\\) *)"
+      "Bash(git commit -q -m 'feat: scaffolding + catálogo _index.html + bloque navbar \\(3 variantes\\) *)",
+      "Bash(open bloques-html/_index.html bloques-html/navbar/navbar-sticky.html bloques-html/navbar/navbar-transparente.html bloques-html/navbar/navbar-mobile.html)",
+      "Bash(git commit -q -m 'style: tipografía Inter como estándar + header premium del catálogo *)",
+      "Bash(open bloques-html/_index.html bloques-html/navbar/navbar-sticky.html)"
     ]
   }
 }

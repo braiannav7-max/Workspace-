@@ -5,21 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catálogo de Bloques — Dev Framework</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','ui-sans-serif','system-ui','sans-serif']}}}}</script>
 </head>
 <body class="bg-slate-100 text-slate-900 antialiased">
 
   <!-- Header del catálogo -->
-  <header class="border-b border-slate-200 bg-white">
-    <div class="mx-auto max-w-6xl px-6 py-10">
-      <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">Dev Framework · Fase 1</p>
-      <h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Catálogo de Bloques HTML</h1>
-      <p class="mt-3 max-w-2xl text-slate-600">
-        Tu vidriera de bloques copy-paste. Elegí una variante, abrila en una pestaña nueva,
-        copiá el markup y adaptalo a tu proyecto. Cada bloque es autocontenido (Tailwind + AOS por CDN).
+  <header class="relative overflow-hidden bg-slate-900 text-white">
+    <!-- glow decorativo -->
+    <div class="pointer-events-none absolute -left-32 -top-32 h-96 w-96 rounded-full bg-indigo-600/30 blur-3xl"></div>
+    <div class="pointer-events-none absolute -right-32 top-0 h-96 w-96 rounded-full bg-fuchsia-600/20 blur-3xl"></div>
+    <div class="relative mx-auto max-w-6xl px-6 py-16">
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-400">Dev Framework · Fase 1</p>
+      <h1 class="mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">
+        Catálogo de <span class="bg-gradient-to-r from-indigo-400 to-fuchsia-400 bg-clip-text text-transparent">Bloques</span>
+      </h1>
+      <p class="mt-4 max-w-2xl text-base leading-relaxed text-slate-300">
+        La vidriera de componentes para armar tu próxima web. Elegí una variante, miralo en vivo,
+        y lo ensamblamos a la medida de tu proyecto. Cada bloque es responsive y autocontenido.
       </p>
-      <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium">
-        <span class="rounded-full bg-emerald-100 px-3 py-1 text-emerald-700">● listo = probado</span>
-        <span class="rounded-full bg-amber-100 px-3 py-1 text-amber-700">○ pendiente = en construcción</span>
+      <div class="mt-6 flex flex-wrap gap-2 text-xs font-medium">
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 px-3 py-1 text-emerald-300 ring-1 ring-inset ring-emerald-500/30"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>listo</span>
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-amber-500/15 px-3 py-1 text-amber-300 ring-1 ring-inset ring-amber-500/30"><span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>en construcción</span>
       </div>
     </div>
   </header>
