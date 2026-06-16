@@ -11,7 +11,10 @@
       "Bash(git commit -q -m 'style: tipografía Inter como estándar + header premium del catálogo *)",
       "Bash(open bloques-html/_index.html bloques-html/navbar/navbar-sticky.html)",
       "Bash(node -e ' *)",
-      "Bash(git commit -q -m 'feat: catálogo completo \\(8 bloques listos\\) + docs de uso + landing de ejemplo *)"
+      "Bash(git commit -q -m 'feat: catálogo completo \\(8 bloques listos\\) + docs de uso + landing de ejemplo *)",
+      "Bash(open _ejemplo-landing.html bloques-html/_index.html)",
+      "Bash(git commit -q -m 'feat\\(hero\\): 3 variantes premium animadas \\(aurora, typing, flotante\\) *)",
+      "Bash(open bloques-html/hero/hero-aurora.html bloques-html/hero/hero-typing.html bloques-html/hero/hero-flotante.html)"
     ]
   }
 }

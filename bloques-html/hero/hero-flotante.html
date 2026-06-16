@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero — Elementos flotantes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','ui-sans-serif','system-ui','sans-serif']}}}}</script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    @keyframes float { 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-18px);} }
+    .float{ animation:float 6s ease-in-out infinite; }
+    .float.delay-1{ animation-delay:1.5s; }
+    .float.delay-2{ animation-delay:3s; }
+    .float.delay-3{ animation-delay:.8s; }
+    /* el parallax mueve este contenedor con el mouse */
+    .parallax{ transition:transform .2s ease-out; }
+  </style>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+  <!-- ===== BLOQUE: hero · variante flotante (parallax) ===== -->
+  <!-- Fuente: patrón propio (float + parallax) · base HyperUI · Licencia: MIT -->
+  <section id="hero" class="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-indigo-50 to-fuchsia-50 px-6">
+
+    <!-- Tarjetas/figuras flotantes decorativas -->
+    <div id="layer" class="pointer-events-none absolute inset-0">
+      <div class="parallax float absolute left-[12%] top-[20%]" data-depth="2">
+        <div class="flex items-center gap-2 rounded-xl bg-white px-4 py-3 shadow-lg">
+          <span class="grid h-8 w-8 place-content-center rounded-lg bg-indigo-600 text-sm text-white">★</span>
+          <span class="text-sm font-semibold">+4.9 rating</span>
+        </div>
+      </div>
+      <div class="parallax float delay-1 absolute right-[14%] top-[24%]" data-depth="3">
+        <div class="rounded-xl bg-white px-4 py-3 shadow-lg">
+          <p class="text-xs text-slate-500">Conversión</p>
+          <p class="text-lg font-bold text-indigo-600">+38%</p>
+        </div>
+      </div>
+      <div class="parallax float delay-2 absolute bottom-[20%] left-[18%]" data-depth="4">
+        <div class="h-14 w-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 shadow-lg"></div>
+      </div>
+      <div class="parallax float delay-3 absolute bottom-[24%] right-[16%]" data-depth="2.5">
+        <div class="flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-lg">
+          <span class="h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+          <span class="text-sm font-medium">En vivo</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative max-w-3xl text-center" data-aos="fade-up">
+      <h1 class="text-5xl font-extrabold leading-tight tracking-tight sm:text-7xl">
+        Diseño que
+        <span class="bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">flota</span>
+        sobre el resto
+      </h1>
+      <p class="mx-auto mt-6 max-w-xl text-lg text-slate-600">
+        Movimiento sutil, profundidad real. Una primera impresión que se queda.
+      </p>
+      <div class="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a href="#" class="rounded-lg bg-indigo-600 px-7 py-3 font-semibold text-white shadow-sm transition hover:bg-indigo-700">Empezar</a>
+        <a href="#" class="rounded-lg border border-slate-300 px-7 py-3 font-semibold text-slate-700 transition hover:bg-slate-50">Saber más</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 700, once: true });
+    // Parallax con el mouse: cada figura se mueve según su data-depth
+    const hero = document.getElementById('hero');
+    const items = document.querySelectorAll('#layer .parallax');
+    hero.addEventListener('mousemove', (e) => {
+      const cx = window.innerWidth / 2, cy = window.innerHeight / 2;
+      const dx = (e.clientX - cx) / cx, dy = (e.clientY - cy) / cy;
+      items.forEach(el => {
+        const depth = parseFloat(el.dataset.depth) || 2;
+        el.style.transform = `translate(${dx * depth * 8}px, ${dy * depth * 8}px)`;
+      });
+    });
+    hero.addEventListener('mouseleave', () => {
+      items.forEach(el => el.style.transform = 'translate(0,0)');
+    });
+  </script>
+</body>
+</html>
