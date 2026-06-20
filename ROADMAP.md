@@ -17,14 +17,16 @@ Biblioteca copy-paste de bloques HTML+Tailwind para maquetas de cliente.
 
 ---
 
-## ⏭️ Fase 2 — Capa React
+## 🔄 Fase 2 — Capa React *(iniciada)*
 
 Migrar bloques validados a componentes React/Next.js para producción.
 - `bloques-react/` con shadcn/ui, Magic UI, Aceternity (estas SÍ son fuentes React)
 - Dashboards base (sidebar, header, auth UI)
+  - ✅ **`dashboards/panel-admin/`** — panel admin config-driven (graduado de IEO). Gate + sidebar + métricas + tabla CRUD genérica + Supabase opcional. Estado `listo`, build verificado.
 - Gráficos y KPIs (Tremor)
 
 **Disparador:** cuando un proyecto aprobado necesite pasar de maqueta a producto real.
+**Nota:** se arrancó esta fase en paralelo a Fase 1 por decisión de Braian (panel admin prioritario), no por cierre de Fase 1.
 
 ---
 
